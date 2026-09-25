@@ -1,0 +1,57 @@
+/* Utilities only: preserve the existing NICA page, without Tailwind preflight. */
+@layer theme, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "./components/ui";
+@source "./novidades.tsx";
+@source "./navbar.tsx";
+@theme inline {
+  --color-background: var(--cream);
+  --color-foreground: var(--espresso);
+  --color-primary: var(--espresso);
+  --color-primary-foreground: var(--cream);
+  --color-input: var(--border);
+  --color-ring: var(--wine);
+  --color-accent: var(--oat);
+  --color-accent-foreground: var(--espresso);
+}
+.nica-carousel{--slide-gap:22px;min-width:0;position:relative}
+.nica-carousel .carousel-track{margin-left:calc(-1 * var(--slide-gap));touch-action:pan-y pinch-zoom}
+.nica-carousel .release-slide{flex:0 0 25%;min-width:0;padding-left:var(--slide-gap)}
+.nica-carousel .carousel-viewport{overflow:hidden}
+.nica-carousel .product-image-button{user-select:none}
+.nica-carousel .release-photo{width:100%;aspect-ratio:225/170;object-fit:cover;display:block}
+/* Position navigation at the middle of the images, independent of card captions. */
+.nica-carousel{container-type:inline-size;--photo-center:calc((100cqw - 66px) * .0944444444)}
+.carousel-controls{display:flex;justify-content:center;margin-top:20px}
+.nica-carousel .carousel-arrow{position:absolute;top:var(--photo-center);margin-top:-22px;transform:none;border:0;border-radius:50%;width:44px;height:44px;background:var(--cream);color:var(--espresso);box-shadow:0 1px 8px #3e2c2312;opacity:0;pointer-events:none;transition:opacity .18s,background .18s;z-index:2}
+.nica-carousel .carousel-prev{left:-22px;right:auto}
+.nica-carousel .carousel-next{right:-22px;left:auto}
+.nica-carousel:hover .carousel-arrow,.nica-carousel:focus-within .carousel-arrow{opacity:1;pointer-events:auto}
+.nica-carousel .carousel-arrow:hover{background:var(--oat)}
+.nica-carousel button:focus-visible{outline:2px solid var(--wine);outline-offset:4px}
+.carousel-pagination{display:flex;gap:10px;align-items:center;justify-content:center}
+.carousel-pagination button{width:36px;min-height:44px;display:grid;place-items:center}
+.carousel-pagination button::after{content:'';height:2px;width:100%;background:var(--border);transition:background .2s}
+.carousel-pagination button[aria-current=true]::after{background:var(--espresso)}
+.release-label{font-size:12px;letter-spacing:.04em;color:#74655b}
+@media(max-width:1000px){.nica-carousel{--photo-center:calc((100cqw - 22px) * .1888888889)}.nica-carousel .release-slide{flex-basis:50%}}
+@media(max-width:600px){.nica-carousel{--slide-gap:16px;--photo-center:calc(100cqw * .3777777778)}.nica-carousel .release-slide{flex-basis:100%}.carousel-controls{margin-top:16px}.carousel-pagination{gap:8px}.carousel-pagination button{width:24px}.nica-carousel .carousel-prev{left:6px}.nica-carousel .carousel-next{right:6px}}
+@media(hover:none){.nica-carousel .carousel-arrow{display:none}}
+@media(prefers-reduced-motion:reduce){.nica-carousel .carousel-arrow,.carousel-pagination button::after{transition:none}}
+
+/* Keep the header's layout space; animate only its painted position. */
+.header{transition:transform .24s ease,box-shadow .24s ease}
+.header.header-hidden{transform:translateY(calc(-100% - 2px));pointer-events:none}
+.header.header-scrolled{box-shadow:0 3px 16px #3e2c230a}
+.header.header-hidden:has(:focus-visible){transform:translateY(0);pointer-events:auto}
+.header .nica-navigation{max-width:none;justify-content:flex-start;z-index:auto}
+.header .nica-navigation-list{margin:0;padding:0;gap:24px;list-style:none;justify-content:flex-start}
+.header .nica-navigation-list>li{margin:0}
+.header .nica-navigation-link{display:inline-flex;align-items:center;min-height:44px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;background:transparent;border-radius:0}
+.header .nica-navigation-link:hover{text-decoration:underline;text-underline-offset:6px}
+.header .nica-navigation-link:focus-visible{outline:2px solid var(--wine);outline-offset:4px}
+@media(max-width:1100px){.header .nica-navigation-list{gap:14px}}
+@media(max-width:700px){#navbar-root{display:none}}
+@media(prefers-reduced-motion:reduce){.header{transition:none}}
+

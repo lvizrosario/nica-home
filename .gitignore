@@ -1,0 +1,82 @@
+node_modules/
+
+# Variaveis de ambiente e configuracoes locais com possiveis segredos.
+.env
+.env.*
+*.env
+*.env.*
+# Modelos devem conter apenas valores ficticios, nunca credenciais reais.
+!.env.example
+!.env.sample
+!.env.template
+.npmrc
+.yarnrc.yml
+*.local
+
+# Credenciais e estado local de provedores.
+.aws/
+.azure/
+.config/gcloud/
+.ssh/
+.vercel/
+.netlify/
+secrets/
+credentials/
+credentials.json
+credentials-*.json
+client_secret*.json
+service-account*.json
+serviceAccount*.json
+*-firebase-adminsdk-*.json
+
+# Chaves privadas e arquivos que podem conter chaves privadas.
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Logs, diagnosticos, backups e bancos locais podem conter dados sensiveis.
+*.log
+logs/
+report.*.json
+*.heapsnapshot
+*.heapprofile
+*.cpuprofile
+*.bak
+*.backup
+*.sql
+*.sql.gz
+*.dump
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+backups/
+
+# Estado de ferramentas, caches e artefatos locais de verificacao.
+.cache/
+.npm/
+.pnpm-store/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Nao ignorar dist/: contem HTML, CSS, JS e assets autorais do site.
+# Manter package-lock.json para instalacoes reproduziveis.

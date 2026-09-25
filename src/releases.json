@@ -1,0 +1,10 @@
+[
+  {"id":"skin-legging","productId":"legging"},
+  {"id":"skin-top","productId":"top"},
+  {"id":"skin-short","productId":"short"},
+  {"id":"skin-jacket","productId":"jacket"},
+  {"id":"skin-legging-detail","productId":"legging","label":"Detalhe","crop":{"x":71,"y":829,"w":150,"h":113}},
+  {"id":"skin-top-detail","productId":"top","label":"Detalhe","crop":{"x":314,"y":829,"w":150,"h":113}},
+  {"id":"skin-short-detail","productId":"short","label":"Detalhe","crop":{"x":557,"y":829,"w":150,"h":113}},
+  {"id":"skin-jacket-detail","productId":"jacket","label":"Detalhe","crop":{"x":799,"y":829,"w":150,"h":113}}
+]
