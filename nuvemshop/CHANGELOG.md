@@ -1,5 +1,12 @@
 # Histórico
 
+## v0.2.0 — 2026-10-05 — proposta, revisão pendente
+
+- Busca abre abaixo do acionador em telas a partir de 1024px, com painel Cream, borda Oat e textos Espresso.
+- Ajuste de alinhamento entre 1024 e 1199px para manter o painel dentro da tela.
+- Três banners desktop: campanha principal, conforto/qualidade e lifestyle NICA CLUB.
+- Inclui orientações para upload, botões nativos, reversão e prompts de geração. Não publicado.
+
 ## v0.1.1 — 2026-10-05 — proposta, revisão pendente
 
 - Centralização conjunta do ícone e texto de frete a partir de 1024px.
