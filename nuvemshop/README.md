@@ -4,7 +4,7 @@ Tema: Ipanema. Loja: https://nicaactive.lojavirtualnuvem.com.br/
 
 ## Estado
 
-- Última proposta: [v0.1.0](releases/v0.1.0/NOTAS.md), cabeçalho desktop.
+- Última proposta: [v0.1.1](releases/v0.1.1/NOTAS.md), frete centralizado no desktop.
 - Versão publicada: **não confirmada**. Não há acesso ao histórico do editor nesta etapa.
 - Fonte oficial para aplicação: pacote dentro de releases/, após revisão. O arquivo antigo typography/ipanema-cabecalho.css é referência histórica.
 

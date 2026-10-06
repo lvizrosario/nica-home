@@ -1,0 +1,31 @@
+/* NICA v0.1.1 — frete centralizado no desktop */
+@media (min-width: 1024px) {
+  .js-navigation-bar .navigation-bar-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+  }
+  .js-navigation-bar .navigation-bar-group:has(#ns-block-nav_icon_text) {
+    grid-column: 2;
+    grid-row: 1;
+    width: auto;
+    min-width: 0;
+    justify-content: center;
+  }
+  .js-navigation-bar .navigation-bar-group:has(#ns-block-nav-icon-text-group_pwkz) {
+    grid-column: 3;
+    grid-row: 1;
+    width: auto;
+    min-width: 0;
+    justify-content: flex-end;
+    padding-right: 24px;
+  }
+  .js-navigation-bar #ns-block-item_1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+

@@ -1,5 +1,12 @@
 # Histórico
 
+## v0.1.1 — 2026-10-05 — proposta, revisão pendente
+
+- Centralização conjunta do ícone e texto de frete a partir de 1024px.
+- Grade com laterais iguais mantém o frete central mesmo com o bloco NICA CLUB ao lado.
+- Mobile segue comportamento nativo. Pacote completo e incremento frete.css disponíveis.
+- Na inspeção atual, somente o frete aparece na faixa e já está centralizado. Aplicação deste pacote não confirmada.
+
 ## v0.1.0 — 2026-10-05 — proposta, revisão pendente
 
 - Primeiro pacote versionado do CSS de cabeçalho já entregue.
