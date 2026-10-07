@@ -1,5 +1,25 @@
 # Histórico
 
+## v0.3.0 — 2026-10-06 — proposta, revisão pendente
+
+- NEW IN com quatro colunas nativas e setas por hover/foco; grade de categorias em três colunas desktop.
+- Blocos de lifestyle/benefícios/FAQ, foto de campanha e plano para newsletter nativa e rodapé Espresso.
+- Pacote CSS completo e incremental, textos e instruções do editor. Integração e cadastro de blocos pendentes; não publicado.
+
+## v0.2.0 — 2026-10-05 — proposta, revisão pendente
+
+- Busca abre abaixo do acionador em telas a partir de 1024px, com painel Cream, borda Oat e textos Espresso.
+- Ajuste de alinhamento entre 1024 e 1199px para manter o painel dentro da tela.
+- Três banners desktop: campanha principal, conforto/qualidade e lifestyle NICA CLUB.
+- Inclui orientações para upload, botões nativos, reversão e prompts de geração. Não publicado.
+
+## v0.1.1 — 2026-10-05 — proposta, revisão pendente
+
+- Centralização conjunta do ícone e texto de frete a partir de 1024px.
+- Grade com laterais iguais mantém o frete central mesmo com o bloco NICA CLUB ao lado.
+- Mobile segue comportamento nativo. Pacote completo e incremento frete.css disponíveis.
+- Na inspeção atual, somente o frete aparece na faixa e já está centralizado. Aplicação deste pacote não confirmada.
+
 ## v0.1.0 — 2026-10-05 — proposta, revisão pendente
 
 - Primeiro pacote versionado do CSS de cabeçalho já entregue.

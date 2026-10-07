@@ -1,0 +1,70 @@
+/* NICA v0.2.0 — painel de busca abaixo do acionador */
+@media (min-width: 1024px) {
+  .js-head-main .search-container {
+    position: relative;
+    overflow: visible;
+  }
+  .js-head-main .search-floating-container {
+    position: absolute !important;
+    transform: none !important;
+    top: calc(100% + 16px) !important;
+    bottom: auto !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 340px !important;
+    max-width: calc(100vw - 32px);
+    height: auto !important;
+    padding: 16px !important;
+    background: #f6f1e9 !important;
+    color: #3e2c23 !important;
+    border: 1px solid #d8c9b8 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 8px 24px #3e2c2314;
+    z-index: 30;
+    transition: none !important;
+  }
+  .js-head-main .search-floating-container .search-form-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+  .js-head-main .search-floating-container .search-form-field {
+    margin: 0;
+  }
+  .js-head-main .search-floating-container .search-input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 76px 12px 14px;
+    background: #f6f1e9 !important;
+    color: #3e2c23 !important;
+    border: 1px solid #d8c9b8 !important;
+    border-radius: 0 !important;
+    font-size: 16px !important;
+  }
+  .js-head-main .search-floating-container .search-input::placeholder {
+    color: #74655b;
+    opacity: 1;
+  }
+  .js-head-main .search-floating-container .search-input:focus-visible {
+    outline: 2px solid #3e2c23;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  .js-head-main .search-floating-container .search-btn {
+    color: #3e2c23;
+    width: 36px;
+    height: 44px;
+    top: 2px;
+  }
+  .js-head-main .search-floating-container .search-suggestions {
+    max-height: 50vh;
+    overflow-y: auto;
+    background: #f6f1e9;
+    color: #3e2c23;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .js-head-main .search-floating-container {
+    left: 0 !important;
+    right: auto !important;
+  }
+}
