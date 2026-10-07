@@ -1,5 +1,11 @@
 # Histórico
 
+## v0.3.0 — 2026-10-06 — proposta, revisão pendente
+
+- NEW IN com quatro colunas nativas e setas por hover/foco; grade de categorias em três colunas desktop.
+- Blocos de lifestyle/benefícios/FAQ, foto de campanha e plano para newsletter nativa e rodapé Espresso.
+- Pacote CSS completo e incremental, textos e instruções do editor. Integração e cadastro de blocos pendentes; não publicado.
+
 ## v0.2.0 — 2026-10-05 — proposta, revisão pendente
 
 - Busca abre abaixo do acionador em telas a partir de 1024px, com painel Cream, borda Oat e textos Espresso.

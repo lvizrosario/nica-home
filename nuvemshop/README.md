@@ -4,7 +4,7 @@ Tema: Ipanema. Loja: https://nicaactive.lojavirtualnuvem.com.br/
 
 ## Estado
 
-- Última proposta: [v0.2.0](releases/v0.2.0/NOTAS.md), busca desktop e três banners de campanha.
+- Última proposta: [v0.3.0](releases/v0.3.0/NOTAS.md), NEW IN, categorias, comunidade, FAQ e rodapé.
 - Versão publicada: **não confirmada**. Não há acesso ao histórico do editor nesta etapa.
 - Fonte oficial para aplicação: pacote dentro de releases/, após revisão. O arquivo antigo typography/ipanema-cabecalho.css é referência histórica.
 
